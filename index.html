@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+
+    <title>动态表单</title>
+</head>
+
+<body>
+    <div class="container">
+        <h3 class="fv-title">价格库存</h3>
+        <div class="fv-wrapper">
+            <div class="clearfix row js-spec">
+                <div class="pull-left col-md-2 text-right">商品规格：</div>
+                <div class="fv-wrapper-right pull-left col-md-10 col-sm-10 col-xs-10">
+                    <div class="js-fvWrapper">
+                        <!-- <div class="fv-specList">
+                            <div class="fv-specName clearfix">
+                                <div class="pull-left fv-specName_name">规格名：</div>
+                                <input class="form-control pull-left fv-specName_input" type="text" placeholder="规格名">
+                                <button type="button" class="close fv-specName_close">
+                                    <span>&times;</span>
+                                </button>
+                            </div>
+                            <div class="fv-specValue clearfix">
+                                <div class="pull-left fv-specValue-name">规格值：</div>
+                                <div class="pull-left fv-specValue-content">
+                                    <div class="clearfix js-specValWrapper">
+                                        <div class="pull-left fv-specValue_inputWrapper">
+                                            <input type="text" class="form-control input-sm fv-specValue_input">
+                                            <button type="button" class="close js-specVal_close">
+                                                <span>&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="pull-left fv-specValue_inputWrapper">
+                                            <input type="text" class="form-control input-sm fv-specValue_input">
+                                            <button type="button" class="close js-specVal_close">
+                                                <span>&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="pull-left fv-specValue_inputWrapper">
+                                            <input type="text" class="form-control input-sm fv-specValue_input">
+                                            <button type="button" class="close js-specVal_close">
+                                                <span>&times;</span>
+                                            </button>
+                                        </div>
+                                        <button type="button" class="btn btn-link fv-specName_btn js-addSpecValue">添加规格值</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> -->
+                    </div>
+                    <div class="fv-addSpec">
+                        <button type="button" class="btn btn-default js-addSpec">添加规格项目</button>
+                        <button type="button" class="btn btn-default js-createSpecTable" data-toggle="collapse" data-target="#createSpecInfo" aria-expanded="false"
+                            aria-controls="createSpecInfo">更新规格详细表</button>
+                        <div class="collapse" id="createSpecInfo">
+                            <div class="well">
+                                <p class="text-warning">请先选择规格</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="clearfix row js-specTable">
+                <div class="pull-left col-md-2 text-right">规格明细：</div>
+                <div class="fv-wrapper-right pull-left col-md-10">
+                    <table class="table table-bordered table-responsive">
+                        <thead>
+                            <tr>
+                                <th>颜色</th>
+                                <th>尺寸</th>
+                                <th>价格（元）</th>
+                                <th>库存</th>
+                                <th>销量</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td rowspan="2">红色</td>
+                                <td>s</td>
+                                <td>
+                                    <input type="text" class="form-control" placeholder=".col-xs-2">
+                                </td>
+                                <td>
+                                    <input type="text" class="form-control" placeholder=".col-xs-2">
+                                </td>
+                                <td>xs</td>
+                            </tr>
+                            <tr>
+                                <td>m</td>
+                                <td>
+                                    <input type="text" class="form-control" placeholder=".col-xs-2">
+                                </td>
+                                <td>
+                                    <input type="text" class="form-control" placeholder=".col-xs-2">
+                                </td>
+                                <td>xs</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="4" class="row">
+                                    <div class="col-lg-2">批量设置：</div>
+                                    <div class="col-lg-4">
+                                        <div class="input-group">
+                                            <span class="input-group-addon" id="basic-addon1">价格</span>
+                                            <input type="text" class="form-control" placeholder="0.00" aria-describedby="basic-addon1">
+                                            <span class="input-group-btn">
+                                                <button class="btn btn-default" type="button">确认</button>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="input-group">
+                                            <span class="input-group-addon" id="basic-addon1">库存</span>
+                                            <input type="text" class="form-control" placeholder="0" aria-describedby="basic-addon1">
+                                            <span class="input-group-btn">
+                                                <button class="btn btn-default" type="button">确认</button>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+            </div> -->
+        </div>
+        <button type="button" class="btn btn-primary js-submitBtn">提交</button>
+    </div>
+    </div>
+
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>

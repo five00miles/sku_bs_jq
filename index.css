@@ -1,0 +1,36 @@
+@charset "UTF-8";
+.row { margin: 0; }
+
+.fv-title { background-color: #f8f8f8; font-size: 14px; font-weight: 700; padding: 10px; }
+
+.fv-wrapper { width: 100%; height: auto; }
+.fv-wrapper > div { margin-bottom: 20px; }
+.fv-wrapper .fv-wrapper-right { border: 1px solid #e5e5e5; padding: 10px; }
+.fv-wrapper .fv-wrapper-right .fv-addSpec { background-color: #F8F8F8; padding: 10px; }
+
+.fv-specList { width: 100%; }
+.fv-specList .fv-specName { background-color: #f8f8f8; padding: 10px; margin-bottom: 10px; }
+.fv-specList .fv-specName .fv-specName_name { margin-top: 6px; }
+.fv-specList .fv-specName .fv-specName_input { width: 15%; margin-left: 10px; }
+.fv-specList .fv-specName .fv-specName_close { margin-top: 6px; }
+.fv-specList .fv-specValue { padding: 10px; }
+.fv-specList .fv-specValue .fv-specValue-name { margin-top: 6px; }
+.fv-specList .fv-specValue .fv-specValue-content { width: 800px; }
+.fv-specList .fv-specValue .fv-specValue-content .fv-specValue_inputWrapper { position: relative; }
+.fv-specList .fv-specValue .fv-specValue-content .fv-specValue_inputWrapper > .close { position: absolute; top: -10px; left: 104px; display: none; }
+.fv-specList .fv-specValue .fv-specValue-content .fv-specValue_inputWrapper:hover .close { display: block; }
+.fv-specList .fv-specValue .fv-specValue-content .fv-specValue_inputWrapper .fv-specValue_input { width: 100px; margin-left: 10px; margin-bottom: 5px; }
+.fv-specList .fv-specValue .fv-specValue-content .fv-specValue_inputWrapper .fv-specValue_input:hover { display: block; }
+.fv-specList .fv-specValue .fv-specValue-content .fv-specName_btn { margin-left: 10px; }
+
+.fv-count, .fv-shelfTime, .fv-desc { padding: 0; }
+
+.fv-shelfTime .radio { margin-top: 0; }
+
+.fv-requiredStar::before { content: '*'; display: inline-block; color: red; font-size: 20px; }
+
+.fv-submitBtn > button { margin: 0 auto; }
+
+/* 超小屏幕（手机，小于 768px） */
+/* 小屏幕（平板，大于等于 768px） */
+/* 大屏幕（大桌面显示器，大于等于 1200px） */
